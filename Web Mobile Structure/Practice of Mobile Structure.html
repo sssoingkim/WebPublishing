@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<style>
+		#header{
+			width: 100%;	height: 45px;
+			position: relative;
+			border-bottom: 3px solid #214885;
+		}
+		#header h1{
+			text-align: center;
+		}
+		#header .home{
+			position: absolute;
+			left: 0;	top: 0;
+		}
+		#header .all-menu{
+			position: absolute;
+			right: 0;	top: 0;
+		}
+
+		#visual{
+			width: 100%;
+		}
+		#visual img{
+			width: 100%;
+		}		
+
+		#container{
+			height: 100%;
+		}
+		#container:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		#content{}
+		#content .box1{
+			width: 100%;
+		}
+		#content .box1 img{
+			width: 100%;
+		}
+
+		#content .box2{
+			width: 100%;
+			padding: 20px;
+			background: #0099cc;
+			color: #fff;
+			box-sizing: border-box;
+		}
+		#content .box2 ul{}
+		#content .box2 ul li{
+			float: left;
+			width: 25%;
+			text-align: center;
+		}
+		#content .box2 ul li span{
+			display: block;
+			color: #fff;
+			font-size: 12px;
+		}
+		
+		#content .box3{
+			width: 100%;
+		}
+		#content .box3 ul{}
+		#content .box3 ul li{
+			float: left;
+			width: 50%;
+		}
+		#content .box3 ul li img{
+			width: 100%;
+		}
+
+		#footer{
+			width: 100%;	height: 24px;
+		}
+		#footer ul{}
+		#footer ul li{
+			float: left;
+			width: 33.33%;
+		}
+		#footer ul li img{
+			width: 100%;
+		}
+
+		#footer .cr{
+			background: #000;
+			color: #dcdcdc;
+			text-align: center;
+			font-size: 12px;
+		}
+		
+	</style>
+	
+</head>
+<body>
+	<div id="header">
+		<p class="home"><a href="#"><img src="images/btn_home.gif" width="55" alt=""/></a></p>
+		<h1><a href="#"><img src="images/h1_logo.gif" width="210" alt="" /></a></h1>
+		<p class="all-menu"><a href="#"><img src="images/btn_allmenu.gif" width="55" alt=""/></a></p>
+	</div>
+	<div id="visual"></div>  <!-- //header -->
+
+	<div id="visual">
+		<img src="images/main_slide_01.jpg" alt="" />
+	</div>  <!-- //visual -->
+
+	<div id="container">
+		<div id="content">
+			<div class="box1">
+				<img src="images/img_01.gif" alt="" />
+			</div>
+			<div class="box2">
+				<ul class="cf">
+					<li><a href="#"><img src="images/icon_01.png" width="60" alt=""><span>모집요강</span></a></li>
+					<li><a href="#"><img src="images/icon_02.png" width="60" alt=""><span>원서접수</span></a></li>
+					<li><a href="#"><img src="images/icon_03.png" width="60" alt=""><span>교육특징</span></a></li>
+					<li><a href="#"><img src="images/icon_04.png" width="60" alt=""><span>서울한서자랑</span></a></li>
+				</ul>
+			</div>
+			<div class="box3">
+				<ul class="cf">
+					<li><img src="images/class_01.gif" alt=""></li>
+					<li><img src="images/class_02.gif" alt=""></li>
+					<li><img src="images/class_03.gif" alt=""></li>
+					<li><img src="images/class_04.gif" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<ul class="cf">
+			<li><a href="#"><img src="images/footer_icon_01.gif" alt=""></a></li>
+			<li><a href="#"><img src="images/footer_icon_02.gif" alt=""></a></li>
+			<li><a href="#"><img src="images/footer_icon_03.gif" alt=""></a></li>
+		</ul>
+		<div class="cr">COPYRIGHT gogai.or.kr. ALL RIGHTS RESERVED</div>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
