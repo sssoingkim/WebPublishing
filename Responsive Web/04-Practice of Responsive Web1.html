@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" /> 
+    <style>
+
+        @font-face{
+        font-family: NanumGothicR;
+            src:url(fonts/NanumGothic-Regular.eot);
+            src:url(fonts/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+                url(fonts/NanumGothic-Regular.woff) format('woff'),
+                url(fonts/NanumGothic-Regular.ttf) format('truetype')
+        }
+        @font-face{
+        font-family: NanumPenScriptR;
+            src:url(fonts/NanumPenScript-Regular.eot);
+            src:url(fonts/NanumPenScript-Regular.eot?#iefix) format('embedded-opentype'),
+                url(fonts/NanumPenScript-Regular.woff) format('woff'),
+                url(fonts/NanumPenScript-Regular.ttf) format('truetype')
+        }
+
+    	#wrap{
+    		width: 1200px;	margin: auto;
+    	}
+		#header{
+			width: 100%;	height: 120px;
+		}
+		#header h1{
+			width: 30%;
+			float: left;
+			padding: 35px 0;
+		}
+		#header h1 a{}
+		#header h1 a img{}
+
+		#nav{
+			width: 70%;
+			float: right;
+			padding: 30px 0;
+		}
+		#gnb{
+		}
+		#gnb li{
+			width: 20%;
+			float: left;
+		}
+		#gnb li a{
+			width: 100%;	height: 60px;		display: block;
+			font-size: 15px;	line-height: 60px;	text-align: center;		font-weight: bold;	color: #fff;
+		}
+
+		#gnb li:nth-child(odd) a{ background: #EC407A;		}
+		#gnb li:nth-child(even) a{ background: #F06292;		}
+
+
+		#container{	height: 100%;	}
+		#container:after{
+			content: "";	display: block;		clear: both;
+		}
+
+		#content{
+			width: 60%;
+			padding: 10px;	box-sizing: border-box;
+			background: #FFCDD2;
+			float: left;
+		}
+		.box{
+			width: 25%;		height: 200px;
+			float: left;
+			background: url(images/man1.jpg) 0 0 no-repeat;
+			background-size: cover;
+		}
+		.box h3{
+			font-size: 25px;	color: #FFEBEE;		font-family: NanumPenScriptR;
+			text-align: center;		line-height: 100px;
+		}
+/*		.box1{background: #EF9A9A;}
+		.box2{background: #E57373;}
+		.box3{background: #EF5350;}
+		.box4{background: #F44336;}
+		.box5{background: #E53935;}
+		.box6{background: #D32F2F;}
+		.box7{background: #C62828;}
+		.box8{background: #B71C1C;}
+		.box9{background: #FF1744;}
+		.box10{background: #FF5252;}*/
+
+		#sidebar{
+			width: 40%;
+			float: right;
+		}
+		#sidebar p{
+			background: #F8BBD0;
+			padding: 10px;
+			font-size: 20px;	 font-family: NanumPenScriptR;
+		}
+		
+		#footer{
+			width: 100%;	height: 120px;
+			background: #E0E0E0;
+			padding: 10px;	box-sizing: border-box;
+		}
+
+	@media screen and (max-width: 1400px) {
+		#wrap{
+			width: 95%;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		#header h1{	width: 100%;	text-align: center;		}
+		#nav{ width: 100%;	padding-top: 0;}
+		#content{ width: 100%;	}
+		#sidebar{ width: 100%;	}
+		.box{ width: 50%;	}
+/*		.box6, .box8{ display: none; } 	//중요하지 않은 건 이렇게 없애기도 함.*/
+	}
+
+	@media screen and (max-width: 480px) {
+		#gnb li{ width: 100%;	}
+		.box{ width: 100%;	}
+		#sidebar{ display: none;	}
+	}
+
+	</style>
+
+</head>
+<body>
+<div id="wrap">
+	<div id="header" class="cf">
+		<h1><a href="#"><img src="http://placehold.it/100x50" alt="logo"/></a></h1>
+		<div id="nav">
+			<ul id="gnb" class="cf">
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Menu</a></li>
+			</ul>
+		</div>
+	</div>	<!-- //header -->
+
+	<div id="container">
+		<div id="content">
+			<div class="box box1">
+				<h3>제목1</h3>
+			</div>
+			<div class="box box2">
+				<h3>제목2</h3>
+			</div>
+			<div class="box box3">
+				<h3>제목3</h3>
+			</div>
+			<div class="box box4">
+				<h3>제목4</h3>
+			</div>
+			<div class="box box5">
+				<h3>제목5</h3>
+			</div>
+			<div class="box box6">
+				<h3>제목6</h3>
+			</div>
+			<div class="box box7">
+				<h3>제목7</h3>
+			</div>
+			<div class="box box8">
+				<h3>제목8</h3>
+			</div>
+			<div class="box box9">
+				<h3>제목9</h3>
+			</div>
+			<div class="box box10">
+				<h3>제목10</h3>
+			</div>
+		</div>
+		<div id="sidebar">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio reprehenderit consectetur porro, dolores error ipsa molestiae. Voluptate quis, officia facere velit officiis eius excepturi, similique doloremque nesciunt, quam maiores sapiente.</p>
+		</div>
+	</div>	<!-- //container -->
+
+	<div id="footer">
+		서울시 관악구 신림로
+	</div>	<!-- //footer -->
+</div>
+
+
+</body>
+</html>
+
+
+
+
+

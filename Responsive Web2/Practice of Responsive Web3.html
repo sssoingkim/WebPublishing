@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>	
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" /> 
+    <style>
+		
+		#wrap{ width: 100%;	}
+
+		#header{ width: 15%;	height: 100%;	position: fixed;	left: 0;	top: 0;	} /*fixed를 쓸때는 높이를 퍼센티지로 쓰는게 좋음, 해상도에 맞게 반응해야하기 때문에 퍼센티지를 선호.*/
+		#header h1{ text-align: center;	padding-top: 50px; padding-bottom: 60px; }
+		#header h1 a{}
+		#header h1 a img{ width: 70%; }
+		/*#nav{}
+		#gnb{}
+		#gnb li{ font-size: 15px; padding-bottom: 20px; text-indent: 50px;}
+		#gnb li a{}
+*/
+		#container{ height: 1040px; width: 85%;	margin-left: 15%; }
+		#container:after{ content: '';	display: block;	clear: both; }
+		#top{ width: 100%; background: #000;	height: 35px;	}
+		#content{}
+		#content .box{ float: left;	height: 260px; padding: 20px;	box-sizing: border-box;	width: 20%;	color: rgba(0,0,0,0.6);	}
+		#content .box h3{ font-size: 25px; }
+		#content .box1{	width: 60%;	height: 520px;	background: #00E5FF;	}
+		#content .box1 h3{ font-size: 100px; color: #fff; }
+		#content .box2{	width: 40%;	background: #E1F5FE;}
+		#content .box3{	background: #80DEEA;}
+		#content .box4{	background: #0288D1;}
+		#content .box5{	background: #00838F;}
+		#content .box6{ width: 40%;	background: #E0F7FA;}
+		#content .box7{ background: #26C6DA;}
+		#content .box8{ background: #ffffff;}
+		#content .box9{	width: 40%; background: #006064;}
+		#content .box10{ background: #00B0FF;}
+		#content .box11{ background: #80DEEA;}
+		#content .box12{ background: #00B8D4;}
+
+	@media screen and (max-width: 1400px) {
+		#header{ position: static;	height: 60px;	}
+/*		#nav{ width: 20%; }
+		#gnb{}
+		#gnb li{ float: left;	}*/
+		#header h1{	width: 200px;	text-align: left;	padding-top: 10px; padding-bottom: 0; }
+		#header h1 a img{ display: none; }
+		#header h1 a{
+			display: block;	height: 60px;
+			background: url(img/logo2.png) 0 0 no-repeat;
+			background-size: 200px;
+		}
+
+		#container{ width: 100%;	margin-left: 0;	}
+
+	} /*//2번*/
+
+	@media screen and (max-width: 1280px) {
+		#content .box{ width: 25%; }
+		#content .box1{ width: 75%; }
+		#content .box6{ width: 50%; }
+		#content .box7{ width: 50%; }
+		#content .box10{ width: 50%; }
+	} /*//3번*/
+
+	@media screen and (max-width: 1024px) {
+		#content .box{ width: 33.333% }
+		#content .box1{ width: 100% }
+		#content .box2{ width: 66.666% }
+		#content .box4{ display: none; }
+		#content .box6{ width: 66.666% }
+		#content .box7{ display: none; }
+		#content .box10{ display: none; }
+		#content .box12{ display: none; }
+	} /*//4번*/
+
+	@media screen and (max-width: 640px) {
+		#content .box{ width: 50% }
+		#content .box1{ width: 100% }
+		#content .box2{ width: 100% }
+		#content .box3{ display: none; }
+		#content .box12{ display: block; }
+	} /*//5번*/
+
+	@media screen and (max-width: 480px) {
+		
+	}
+
+
+	</style>
+	
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1>
+				<a href="#"><img src="img/logo1.png" alt=""/></a>
+			</h1>
+<!-- 			<div id="nav">
+				<ul id="gnb cf">
+					<li><a href="#">Hotel</a></li>
+					<li><a href="#">Facility</a></li>
+					<li><a href="#">Business</a></li>
+					<li><a href="#">Restaurant</a></li>
+				</ul>
+			</div> -->
+		</div>
+		<div id="container">
+			<div id="top">
+			</div>
+			<div id="content">
+				<div class="box box1">
+					<h3>title1</h3>
+				</div>
+				<div class="box box2">
+					<h3>title2</h3>
+				</div>
+				<div class="box box3">
+					<h3>title3</h3>
+				</div>
+				<div class="box box4">
+					<h3></h3>
+				</div>
+				<div class="box box5">
+					<h3></h3>
+				</div>
+				<div class="box box6">
+					<h3>title6</h3>
+				</div>
+				<div class="box box7">
+					<h3></h3>
+				</div>
+				<div class="box box8">
+					<h3>title8</h3>
+				</div>
+				<div class="box box9">
+					<h3></h3>
+				</div>
+				<div class="box box10">
+					<h3></h3>
+				</div>
+				<div class="box box11">
+					<h3>title11</h3>
+				</div>
+				<div class="box box12">
+					<h3></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
